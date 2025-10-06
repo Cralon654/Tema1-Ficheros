@@ -1,7 +1,7 @@
 import java.io.File;
 import java.util.Date;
 
-public class Fichero {
+public class Ejercicio1 {
     public static void main(String[] args) {
             File archivo = new File("/Users/carloscanocastrillon/Desktop/Escritorio - MacBook Pro de Carlos/DAM");
             //Ejercio 1
