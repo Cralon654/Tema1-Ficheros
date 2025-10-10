@@ -31,9 +31,9 @@ public class Ejercicio3 {
 
                     break;
 
-            if (opcion < 1 || opcion > 3) {
-                break;
-            }
+            // if (opcion < 1 || opcion > 3) {
+            //     break;
+            // }
             }
         }
 
