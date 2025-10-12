@@ -4,7 +4,25 @@ import java.util.Scanner;
 public class Ejercicio3 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        File f = new File("src/resources/notas.txt");
+
+        // Definir la ruta y el nombre del archivo
+        String nombreArchivo = "src/resources/notas.txt";
+
+        // Crear un objeto File con la ruta del archivo
+        File f = new File(nombreArchivo);
+
+        try {
+            // Intentar crear el archivo
+            if (f.createNewFile()) {
+                System.out.println("Archivo creado con éxito: " + f.getAbsolutePath());
+            } else {
+                System.out.println("El archivo ya existe: " + f.getAbsolutePath());
+            }
+        } catch (IOException e) {
+            System.err.println("Error al crear el archivo: " + e.getMessage());
+            e.printStackTrace();
+        }
+
         f.setReadable(true);
         f.setReadable(true);
 
